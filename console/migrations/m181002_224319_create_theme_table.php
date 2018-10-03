@@ -12,9 +12,10 @@ class m181002_224319_create_theme_table extends Migration
      */
     public function safeUp()
     {
-        $this->createTable('theme', [
-            'id' => $this->primaryKey(),
-        ]);
+        $this->execute(file_get_contents(__DIR__ , '/lesson1_dump.sql'));
+        //$this->createTable('theme', [
+         //   'id' => $this->primaryKey(),
+        //]);
     }
 
     /**
