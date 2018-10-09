@@ -7,7 +7,7 @@ class FilmsCest
 {
     public function checkFilms(FunctionalTester $I)
     {
-        $I->amOnRoute('films');
+        $I->amOnRoute('/films');
         $I->see('Films', 'h1');
     }
 }
